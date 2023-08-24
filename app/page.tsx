@@ -1,9 +1,14 @@
+import { Experience } from './components/Experience';
 import { Hero } from './components/Hero';
+import { HorizontalLine } from './components/HorizontalLine';
 
 const Page: React.FC = () => {
   return (
-    <main>
+    <main className='container max-w-xl mx-auto py-20 grid gap-y-8'>
       <Hero />
+      <HorizontalLine />
+      <Experience />
+      <HorizontalLine />
     </main>
   );
 };

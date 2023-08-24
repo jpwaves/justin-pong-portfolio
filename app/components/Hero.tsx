@@ -7,7 +7,7 @@ export const Hero: React.FC = () => {
   `;
 
   return (
-    <div className='container mx-auto max-w-xl my-9 flex flex-col items-center gap-y-4'>
+    <div className='container mx-auto w-full flex flex-col items-center gap-y-4'>
       <div className='w-48 h-48 overflow-hidden rounded-full my-10'>
         <Image
           src='/images/profile-pic-v1.jpg'
