@@ -1,3 +1,4 @@
+import { formatDates } from '@/app/util/dateFormatter';
 import format from 'date-fns/format';
 
 interface ExperienceItemProps {
@@ -15,17 +16,13 @@ export const ExperienceItem: React.FC<ExperienceItemProps> = ({
   startDate,
   endDate,
 }) => {
-  const dateFormat = 'MMM yyyy';
-  const formattedDates = `${format(startDate, dateFormat)} - ${
-    endDate ? format(endDate, dateFormat) : 'Present'
-  }`;
   return (
     <div className='container flex flex-col items-start gap-y-1 w-full'>
       <div className='flex flex-row justify-between w-full font-semibold'>
         <h3>
           {role} | {company}
         </h3>
-        <p>{formattedDates}</p>
+        <p>{formatDates(startDate, endDate)}</p>
       </div>
       <p className='text-sm'>{description}</p>
     </div>
