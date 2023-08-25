@@ -1,6 +1,6 @@
-import { Experience } from './components/Experience';
+import { Experience } from './components/experience/Experience';
 import { Hero } from './components/Hero';
-import { HorizontalLine } from './components/HorizontalLine';
+import { HorizontalLine } from './components/styled-components/HorizontalLine';
 
 const Page: React.FC = () => {
   return (
