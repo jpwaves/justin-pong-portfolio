@@ -1,5 +1,6 @@
+import { Contact } from './components/contact/Contact';
 import { Experience } from './components/experience/Experience';
-import { Hero } from './components/Hero';
+import { Hero } from './components/hero/Hero';
 import { Projects } from './components/projects/Projects';
 import { HorizontalLine } from './components/styled-components/HorizontalLine';
 
@@ -11,6 +12,8 @@ const Page: React.FC = () => {
       <Experience />
       <HorizontalLine />
       <Projects />
+      <HorizontalLine />
+      <Contact />
     </main>
   );
 };
